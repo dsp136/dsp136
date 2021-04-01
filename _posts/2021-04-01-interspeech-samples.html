@@ -162,7 +162,7 @@
 </tbody></table>
 
 
-<h2 id="Ablation-inference">Ablation Inference</h2>
+<!-- <h2 id="Ablation-inference">Ablation Inference</h2>
 <p>We do the inference with ablation to see the effectiveness of adding prosody embedding to the text embedding \(\mathbf{H}^{f}\). After training we do 2 seperate setups:</p>
 <ul>
   <li>During inference time, we generate samples normally (both use text embedding \(\mathbf{H}^{t}\) and prosody embedding \(\mathbf{H}^{f}\) ), denoted as <b>Normal</b>. </li>
@@ -174,12 +174,11 @@
 <tr>
 <th style="text-align: center">Normal</th>
 <th style="text-align: center">Model-w/o-pros</th>
-<!-- <th style="text-align: center">Tacotron 2 + Hifi-GAN</th> -->
+
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" ><source src="../audios/proposed1/01455000_samp15_ref_LJ001-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 <td style="text-align: center"><audio controls="controls" ><source src="../audios/fs21/samp_15.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<!-- <td style="text-align: center"><audio controls="controls" ><source src="../audios/tacotron1/samp_15.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
 </tr>
 </tbody></table>
 <p><em>She had struggled with severe depression when she was a teenager.</em></p>
@@ -187,52 +186,13 @@
 <tr>
 <th style="text-align: center">Normal</th>
 <th style="text-align: center">Model-w/o-pros</th>
-<!-- <th style="text-align: center">Tacotron 2 + Hifi-GAN</th> -->
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" ><source src="../audios/proposed1/01455000_samp18_ref_LJ001-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 <td style="text-align: center"><audio controls="controls" ><source src="../audios/fs21/samp_18.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<!-- <td style="text-align: center"><audio controls="controls" ><source src="../audios/tacotron1/samp_18.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
 </tr>
-</tbody></table>
-<!-- <p>Compared with autoregressive Transformer TTS, our model speeds up the mel-spectrogram generation by 270x and the end-to-end speech synthesis by 38x.</p> -->
-<!-- <table><thead>
-<tr>
-<th style="text-align: center">Inference Time vs. Mel Length (FastSpeech)</th> -->
-<!-- <th style="text-align: center">Inference Time vs. Mel Length (Transformer TTS)</th> -->
-<!-- </tr></thead><tbody>
-<tr>
-<td style="text-align: center">
-<img src="../images/plot.png" width="60%"/>
-</td> -->
-<!-- <td style="text-align: center">
-<img src="../images/fastspeech/infer_time_plot2.png" width="100%"/>
-</td> -->
-<!-- </tr>
 </tbody></table> -->
-<!-- <p>We also visualize the relationship between the inference latency and the length of the predicted mel-spectrogram sequence in the test set. It can be found from Figure that the inference latency barely increases with the length of the predicted mel-spectrogram for FastSpeech, while increases largely in Transformer TTS. This indicates that the inference speed of our method is not sensitive to the length of generated audio due to parallel generation.</p> -->
-<!-- ## Model Hyperparameters
 
-\ | Transformer TTS   |  Our Model
---------|------|------
- Hidden Size | 384 | 384
- Conv1D Kernel | 3 | 3
- Conv1D Filter Size | 384 | 384
- \#Encoder/Phoneme-Side FFT Layer | 4 | 4 
- \#Decoder/Mel-Side FFT Layers | 4 | 4
- FFT Block Dropout | 0.1 | 0.1
- Total Number  | 26.3M  |  24.2M 
-
- -->
-<!-- <h2 id="our-related-works">Our Related Works</h2>
-<p><a href="/unsuper/">Almost Unsupervised Text to Speech and Automatic Speech Recognition</a><br>
-<a href="/seminas/">Semi-Supervised Neural Architecture Search</a><br>
-<a href="/multispeech/">MultiSpeech: Multi-Speaker Text to Speech with Transformer</a><br>
-<a href="/lrspeech/">LRSpeech: Extremely Low-Resource Speech Synthesis and Recognition</a><br>
-<a href="/deepsinger/">DeepSinger: Singing Voice Synthesis with Data Mined From the Web</a><br>
-<a href="/fastspeech2/">FastSpeech 2: Fast and High-Quality End-to-End Text-to-Speech</a><br>
-<a href="/uwspeech/">UWSpeech: Speech to Speech Translation for Unwritten Languages</a><br>
-<a href="/denoispeech/">Denoising Text to Speech with Frame-Level Noise Modeling</a><br></p> -->
 
 			</section>
 		</article>
