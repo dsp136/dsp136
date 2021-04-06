@@ -23,8 +23,6 @@
 
 	<header role="banner">
 		
-			
-		
 		
 	</header>
 
@@ -120,11 +118,13 @@
 </tr>
 </tbody></table>
 
-<!-- <h2 id="Ablation-inference">Ablation Inference</h2>
-<p>We do the inference with ablation to see the effectiveness of adding prosody embedding to the text embedding \(\mathbf{H}^{f}\). After training we do 2 seperate setups:</p>
+<h2 id="Ablation-inference">Ablation Inference</h2>
+<p>After training process. Ablation study during inference time is conducted using the following seperate settings:</p>
 <ul>
-  <li>During inference time, we generate samples normally (both use text embedding \(\mathbf{H}^{t}\) and prosody embedding \(\mathbf{H}^{f}\) ), denoted as <b>Normal</b>. </li>
-  <li>During inference time, we delibrately remove the connection of prosody embedding \(\mathbf{H}^{f}\) to make the generator synthesize speech using only text information \(\mathbf{H}^{t}\). It is denoted as <b>Model-w/o-pros</b>. </li>
+
+  <li> \mathbf{(a)}: The connection of the prosody embedding \(\mathbf{H}^{f}\) is removed to make the generator synthesize speech using only the text information \(\mathbf{H}^{t}\). </li>
+  <li> \mathbf{(b)}: The connection of the text information \(\mathbf{H}^{t}\) is removed to make the generator synthesize speech using only  the prosody embedding \(\mathbf{H}^{f}\). </li> 
+  <li> \mathbf{(c)}: The model generates samples normally using both text embedding \(\mathbf{H}^{t}\) and prosody embedding \(\mathbf{H}^{f}\) . </li>
 </ul>
 
 <p><em>She thought that he might not have become involved in the assassination if people had been kinder to him.</em></p>
@@ -149,7 +149,7 @@
 <td style="text-align: center"><audio controls="controls" ><source src="../audios/proposed1/01455000_samp18_ref_LJ001-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 <td style="text-align: center"><audio controls="controls" ><source src="../audios/fs21/samp_18.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
-</tbody></table> -->
+</tbody></table>
 
 
 			</section>
